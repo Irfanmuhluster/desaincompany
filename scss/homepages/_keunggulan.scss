@@ -1,0 +1,104 @@
+.keunggulan {
+    display: flex;
+    flex: 1 1 0%;
+    width: 100%;
+    // padding-top: 3rem;
+    padding-left: 3rem;
+    // padding-right: 3rem;
+    .keunggulan-left {
+        @include for-tablet-landscape-up {
+            display: flex;
+        }
+        width: 35rem;
+        background-color: $coolGray-50;
+        overflow: hidden;
+        .unggulan-img {
+            width: 100%;
+            padding: 3rem;
+            height: auto;
+            border-radius: 0px;
+            object-fit: cover;
+        }
+    }
+    .keunggulan-right {
+        @include for-tablet-landscape-up {
+            display: flex;
+        }
+        flex-direction: column;
+        .title {
+            @include text-xl;
+            font-weight: 700;
+            padding-bottom: 3rem;
+            color: $coolGray-800;
+        }
+        .title-description {
+            @include text-lg;
+            font-weight: 500;
+            letter-spacing: $tracking-wide;
+            
+            padding-right: 4rem;
+            color: $coolGray-600;
+        }
+        width: 100%;
+        padding-left: 3rem;
+        // padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: white;
+        overflow: hidden;
+        // border-radius: 0.25rem
+    }
+}
+
+.keunggulan-reverse {
+    display: flex;
+    flex: 1 1 0%;
+    width: 100%;
+    flex-direction: row-reverse;
+    // padding-top: 3rem;
+    padding-bottom: 3rem;
+    // padding-right: 3rem;
+    .keunggulan-left {
+        @include for-tablet-landscape-up {
+            display: flex;
+        }
+        width: 35rem;
+        background-color: $coolGray-50;
+        overflow: hidden;
+        .unggulan-img {
+            width: 100%;
+            padding: 3rem;
+            height: auto;
+            border-radius: 0px;
+            object-fit: cover;
+        }
+    }
+    .keunggulan-right {
+        @include for-tablet-landscape-up {
+            display: flex;
+        }
+        flex-direction: column;
+        .title {
+            @include text-xl;
+            font-weight: 700;
+            padding-bottom: 3rem;
+            color: $coolGray-800;
+        }
+        .title-description {
+            @include text-lg;
+            font-weight: 500;
+            letter-spacing: $tracking-wide;
+            
+            padding-right: 4rem;
+            color: $coolGray-600;
+        }
+        width: 100%;
+        padding-left: 6rem;
+        // padding-right: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: white;
+        overflow: hidden;
+        // border-radius: 0.25rem
+    }
+}

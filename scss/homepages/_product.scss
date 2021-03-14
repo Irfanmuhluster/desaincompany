@@ -1,0 +1,27 @@
+.product {
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #f9fafb;
+    margin: 0;
+    .product-box {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        height: 15rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .product-box_title {
+            @include text-lg;
+            font-weight: 700;
+            text-align: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            color: $coolGray-50;
+            background-color: RGBA(107,114,128,0.5);
+        }
+    }
+}
