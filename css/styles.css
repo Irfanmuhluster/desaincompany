@@ -292,16 +292,12 @@ header {
   background-size: cover;
   overflow: hidden;
   margin-left: auto;
-  margin-right: auto;
-  background: #348F50;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #56B4D3, #348F50);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #56B4D3, #059669);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  margin-right: auto; }
   .banner::before {
     content: "";
     background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to bottom, rgba(86, 180, 211, 0.5), rgba(5, 150, 105, 0.75));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -349,6 +345,37 @@ header {
     height: 55px; }
   .banner .custom-shape-divider-bottom-1614753936 .shape-fill {
     fill: #f9fafb; }
+
+.welcome {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .welcome .welcome-items {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    z-index: 10;
+    position: relative; }
+  .welcome .welcome-title {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #1f2937; }
+  .welcome .welcome-desc {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 1.625;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    margin-bottom: 1.5rem;
+    color: #6b7280; }
 
 *, :after, :before {
   -moz-box-sizing: border-box;
@@ -642,12 +669,12 @@ label {
     margin-left: 1rem; }
 
 .btn-large-rose {
-  background-color: transparent;
+  background-color: #f59e0b;
   border-style: solid !important;
   border-width: 1px !important;
   color: #ffff;
-  color: #84cc16;
-  border-color: #65a30d;
+  color: white;
+  border-color: #f59e0b;
   transition-duration: .15s;
   transition-property: background-color,border-color,color,fill,stroke;
   --text-opacity: 1;
@@ -662,9 +689,9 @@ label {
   display: inline-block;
   border-radius: 0.25rem; }
   .btn-large-rose:hover {
-    background-color: #84cc16;
-    border-color: #65a30d;
-    color: white !important; }
+    background-color: #b45309;
+    border-color: #b45309;
+    color: #fef3c7 !important; }
 
 .btn {
   --text-opacity: 1;
@@ -988,8 +1015,7 @@ label {
   display: flex;
   flex: 1 1 0%;
   width: 100%;
-  flex-direction: row-reverse;
-  padding-bottom: 3rem; }
+  flex-direction: row-reverse; }
   .keunggulan-reverse .keunggulan-left {
     width: 35rem;
     background-color: #f9fafb;

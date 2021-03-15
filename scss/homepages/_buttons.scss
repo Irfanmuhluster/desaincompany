@@ -1,10 +1,10 @@
 .btn-large-rose {
-    background-color: transparent;
+    background-color: $amber-500;
     border-style: solid !important;
     border-width: 1px !important;
     color:$white;
-    color:$lime-500;
-    border-color: $lime-600;
+    color: white;
+    border-color: $amber-500;
     transition-duration: .15s;
     transition-property: background-color,border-color,color,fill,stroke;
     --text-opacity: 1;
@@ -19,9 +19,9 @@
     display: inline-block;
     border-radius: 0.25rem;
     &:hover {
-        background-color: $lime-500;
-        border-color: $lime-600;
-        color: white !important;
+        background-color: $amber-700;
+        border-color: $amber-700;
+        color: $amber-100 !important;
     }
 }
 
