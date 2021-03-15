@@ -1088,22 +1088,31 @@ footer {
   grid-gap: 1.5rem;
   height: 100%;
   background-color: #343a40;
+  background: linear-gradient(to top, rgba(86, 180, 211, 0.75), #059669);
   margin: 0;
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
   @media (min-width: 900px) {
     footer {
       grid-template-columns: 4fr 4fr 4fr; } }
+  footer .description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    color: #1f2937;
+    text-align: center;
+    padding-bottom: 1.75rem; }
+  footer .description2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.025em;
+    color: #374151;
+    text-align: center; }
   footer .footer-contact {
     margin: 1rem 0; }
     footer .footer-contact .link {
       color: #d1d5db !important; }
-  footer .menu-bawah {
-    display: flex;
-    flex-direction: column; }
-  footer .peta {
-    width: 100%;
-    overflow: hidden; }
 
 .copyright {
   padding-left: 2.5rem;
