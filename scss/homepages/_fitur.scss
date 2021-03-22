@@ -1,16 +1,13 @@
 .fitur {
     display: grid;
     @include for-tablet-landscape-up {    
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 6rem;
     background-color: green;
     margin: 0;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding: 6rem;
     background-color: rgba(16, 183, 127, 0.9);
     bottom: auto;
     .box-fitur {
