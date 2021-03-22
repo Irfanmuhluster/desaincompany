@@ -1008,7 +1008,6 @@ label {
       border-radius: 0px;
       object-fit: cover; }
   .keunggulan .keunggulan-right {
-    display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 3rem;
@@ -1018,7 +1017,7 @@ label {
     overflow: hidden; }
     @media (min-width: 900px) {
       .keunggulan .keunggulan-right {
-        flex-direction: row; } }
+        display: flex; } }
     .keunggulan .keunggulan-right .title {
       font-size: 1.5rem;
       line-height: 2rem;

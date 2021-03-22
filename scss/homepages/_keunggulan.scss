@@ -31,9 +31,8 @@
         }
     }
     .keunggulan-right {
-        display: flex;
         @include for-tablet-landscape-up {
-            flex-direction: row;
+            display: flex;
         }
         flex-direction: column;
         .title {
