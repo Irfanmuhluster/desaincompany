@@ -935,8 +935,12 @@ label {
     color: #f9fafb !important; }
 
 .service-with-padding {
-  padding-left: 12rem;
-  padding-right: 12rem; }
+  padding-left: 0rem;
+  padding-right: 0rem; }
+  @media (min-width: 900px) {
+    .service-with-padding {
+      padding-left: 12rem;
+      padding-right: 12rem; } }
 
 .fitur {
   display: grid;
@@ -944,12 +948,15 @@ label {
   grid-gap: 6rem;
   background-color: green;
   margin: 0;
-  padding: 6rem;
+  padding: 2rem;
   background-color: rgba(16, 183, 127, 0.9);
   bottom: auto; }
   @media (min-width: 900px) {
     .fitur {
       grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) {
+    .fitur {
+      padding: 6rem; } }
   .fitur .box-fitur {
     background-color: #f9fafb;
     border-radius: 0.25rem;
