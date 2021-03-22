@@ -1,13 +1,23 @@
 .product {
     display: grid;
     padding: 4rem;
-    grid-template-columns: repeat(4, 1fr);
+    @include for-tablet-landscape-up {    
+        grid-template-columns: repeat(4, 1fr);
+    }
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     background-color: #f9fafb;
     margin: 0;
     .product-box {
         padding-top: 3rem;
         padding-bottom: 3rem;
+        @include for-tablet-landscape-up {    
+            margin-bottom: 0.5rem;
+        }
+        @include max-table-down {    
+            box-shadow: $shadow-md;
+        }
+        margin-bottom: 3rem;
         height: 15rem;
         justify-content: center;
         align-items: center;

@@ -5,8 +5,12 @@
     .welcome-items {
         padding-top: 9rem;
         padding-bottom: 6rem;
-        padding-left: 9rem;
-        padding-right: 9rem;
+        @include for-tablet-landscape-up {    
+            padding-left: 9rem;
+            padding-right: 9rem;
+        }
+        padding-left: 3rem;
+        padding-right: 3rem;
         align-items: center;
         text-align: center;
         display: grid;

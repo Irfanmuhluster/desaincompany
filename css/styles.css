@@ -307,14 +307,18 @@ header {
   .banner .banner-items {
     padding-top: 9rem;
     padding-bottom: 6rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     align-items: center;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     z-index: 10;
     position: relative; }
+    @media (min-width: 900px) {
+      .banner .banner-items {
+        padding-left: 9rem;
+        padding-right: 9rem; } }
   .banner .banner-title {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -353,14 +357,18 @@ header {
   .welcome .welcome-items {
     padding-top: 9rem;
     padding-bottom: 6rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     align-items: center;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     z-index: 10;
     position: relative; }
+    @media (min-width: 900px) {
+      .welcome .welcome-items {
+        padding-left: 9rem;
+        padding-right: 9rem; } }
   .welcome .welcome-title {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -928,7 +936,7 @@ label {
 
 .fitur {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   background-color: green;
   margin: 0;
@@ -938,6 +946,9 @@ label {
   padding-left: 3rem;
   background-color: rgba(16, 183, 127, 0.9);
   bottom: auto; }
+  @media (min-width: 900px) {
+    .fitur {
+      grid-template-columns: repeat(4, 1fr); } }
   .fitur .box-fitur {
     background-color: #f9fafb;
     border-radius: 0.25rem;
@@ -970,16 +981,26 @@ label {
 
 .keunggulan {
   display: flex;
+  flex-direction: column;
   flex: 1 1 0%;
   width: 100%;
-  padding-left: 3rem; }
+  padding-left: 0.5rem; }
+  @media (min-width: 900px) {
+    .keunggulan {
+      flex-direction: row; } }
+  @media (min-width: 900px) {
+    .keunggulan {
+      margin-left: 3rem; } }
   .keunggulan .keunggulan-left {
-    width: 35rem;
+    width: 100%;
     background-color: #f9fafb;
     overflow: hidden; }
     @media (min-width: 900px) {
       .keunggulan .keunggulan-left {
         display: flex; } }
+    @media (min-width: 900px) {
+      .keunggulan .keunggulan-left {
+        width: 35rem; } }
     .keunggulan .keunggulan-left .unggulan-img {
       width: 100%;
       padding: 3rem;
@@ -987,6 +1008,7 @@ label {
       border-radius: 0px;
       object-fit: cover; }
   .keunggulan .keunggulan-right {
+    display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 3rem;
@@ -996,7 +1018,7 @@ label {
     overflow: hidden; }
     @media (min-width: 900px) {
       .keunggulan .keunggulan-right {
-        display: flex; } }
+        flex-direction: row; } }
     .keunggulan .keunggulan-right .title {
       font-size: 1.5rem;
       line-height: 2rem;
@@ -1015,14 +1037,18 @@ label {
   display: flex;
   flex: 1 1 0%;
   width: 100%;
-  flex-direction: row-reverse; }
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    .keunggulan-reverse {
+      flex-direction: row-reverse; } }
   .keunggulan-reverse .keunggulan-left {
-    width: 35rem;
+    display: flex;
+    width: 100%;
     background-color: #f9fafb;
     overflow: hidden; }
     @media (min-width: 900px) {
       .keunggulan-reverse .keunggulan-left {
-        display: flex; } }
+        width: 35rem; } }
     .keunggulan-reverse .keunggulan-left .unggulan-img {
       width: 100%;
       padding: 3rem;
@@ -1057,17 +1083,27 @@ label {
 .product {
   display: grid;
   padding: 4rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   background-color: #f9fafb;
   margin: 0; }
+  @media (min-width: 900px) {
+    .product {
+      grid-template-columns: repeat(4, 1fr); } }
   .product .product-box {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-bottom: 3rem;
     height: 15rem;
     justify-content: center;
     align-items: center;
     display: flex; }
+    @media (min-width: 900px) {
+      .product .product-box {
+        margin-bottom: 0.5rem; } }
+    @media (max-width: 900px) {
+      .product .product-box {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); } }
     .product .product-box .product-box_title {
       font-size: 1.125rem;
       line-height: 1.75rem;

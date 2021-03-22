@@ -1,6 +1,9 @@
 .fitur {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include for-tablet-landscape-up {    
+        grid-template-columns: repeat(4, 1fr);
+    }
+    grid-template-columns: 1fr;
     grid-gap: 2rem;
     background-color: green;
     margin: 0;
