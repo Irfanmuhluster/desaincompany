@@ -39,7 +39,7 @@
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
         font-weight: $font-extrabold;
-        @include text-5xl();
+        @include text-xl();
         color: white;
     }
     .banner-desc {

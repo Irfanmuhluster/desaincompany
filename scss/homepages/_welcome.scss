@@ -6,8 +6,8 @@
         padding-top: 9rem;
         padding-bottom: 6rem;
         @include for-tablet-landscape-up {    
-            padding-left: 9rem;
-            padding-right: 9rem;
+            padding-left: 13rem;
+            padding-right: 13rem;
         }
         padding-left: 3rem;
         padding-right: 3rem;
@@ -21,8 +21,9 @@
     .welcome-title {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
-        font-weight: $font-extrabold;
-        @include text-3xl();
+        font-weight: $font-semibold;
+        font-size: 1.25rem;
+        line-height: 4rem;
         color: $coolGray-800;
     }
     .welcome-desc {

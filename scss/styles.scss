@@ -1,13 +1,16 @@
 
 @import "variables";
 @import "homepages/mixins";
-@import "homepages/navbar";
+@import "layout/navbar";
+@import "layout/footer";
+@import "homepages/base";
+
 @import "homepages/banner";
 @import "homepages/welcome";
-@import "homepages/base";
 @import "homepages/buttons";
 @import "homepages/layanan";
 @import "homepages/fitur";
 @import "homepages/keunggulan";
 @import "homepages/product";
-@import "homepages/footer";
+
+@import "product/listproduct";

@@ -29,6 +29,7 @@ body {
     font-family: "circular", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: $coolGray-700;
     overflow-x: hidden;
     margin: 0;
 }
@@ -148,8 +149,17 @@ input:focus, button:focus, textarea:focus {
     box-shadow: none;
 }
 
+
+.heading-2 {
+    color: #f59e0b;
+    text-align: left;
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 .heading {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
     font-weight: 600;
     color: #f59e0b;
@@ -220,6 +230,15 @@ input:focus, button:focus, textarea:focus {
 
 .padding-1 {
     padding: 1rem;
+}
+
+.padding-top-bottom-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.padding-4 {
+    padding: 4rem;
 }
 
 .padding-1setengah {
@@ -341,3 +360,16 @@ label {
         margin-left: 1rem;
     }
   }
+
+
+  h1{font-size:2rem}
+  h2{font-size:1.5rem}
+  h3{font-size:1.25rem}
+  h4{font-size:1rem}
+  h5{font-size:.75rem}
+  h6{font-size:.5rem}
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-top: 0;
+}
